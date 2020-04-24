@@ -1,0 +1,15 @@
+/* =============
+    footer
+============= */
+footer {
+  display: grid;
+  grid-template-columns: 40% auto 40%;
+  grid-template-areas: ". footer ."; 
+}
+
+   #footer-content {
+    grid-area: footer;}
+
+        img{
+            width:100%;
+        }

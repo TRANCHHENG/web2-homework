@@ -1,0 +1,32 @@
+/* =============
+    Section 2
+============= */
+#section-2-container{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-2 .";
+
+    #section-2-content{
+        grid-area: section-2;
+    }
+}
+    aside 
+        img {
+            width: 100%;
+ }
+ 
+h3 {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 25px;
+    border-top: solid; 
+    border-bottom: solid;
+    text-align: center;
+
+}
+p{
+    font-family: "Montserrat";
+    font-weight: lighter; 
+    font-size: 16px; 
+    text-align: justify;  
+}
