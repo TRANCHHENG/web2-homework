@@ -1,6 +1,9 @@
 /* =============
     Section 5
 ============= */
+ul{
+    padding: none;
+}
 
 #section-5-container{
     display: grid;
@@ -11,7 +14,7 @@
         grid-area: section-5;
         display: grid;
         gap:20px;
-        list-style-type: none;
+        
     }
         li{
             img{

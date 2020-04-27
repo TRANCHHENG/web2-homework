@@ -317,6 +317,38 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0px; }
+  ul li {
+    list-style: none; }
+
+p {
+  font-family: "Montserrat";
+  font-weight: lighter;
+  font-size: 16px;
+  text-align: justify; }
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 25px;
+  border-top: solid;
+  border-bottom: solid;
+  text-align: center; }
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 25px;
+  border-top: solid;
+  border-bottom: solid;
+  text-align: center; }
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 37px; }
+
 /* =============
     Typography
 ============= */
@@ -353,11 +385,6 @@ textarea {
 #section-1 img {
   width: 100%; }
 
-h1 {
-  font-family: "Montserrat";
-  font-weight: bolder;
-  font-size: 37px; }
-
 /* =============
     Section 2
 ============= */
@@ -371,20 +398,6 @@ h1 {
 aside
 img {
   width: 100%; }
-
-h3 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 25px;
-  border-top: solid;
-  border-bottom: solid;
-  text-align: center; }
-
-p {
-  font-family: "Montserrat";
-  font-weight: lighter;
-  font-size: 16px;
-  text-align: justify; }
 
 /* =============
     Section 3
@@ -402,25 +415,19 @@ p {
   #section-4-container #section-4-content {
     grid-area: section-4; }
 
-h2 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 25px;
-  border-top: solid;
-  border-bottom: solid;
-  text-align: center; }
-
 /* =============
     Section 5
 ============= */
+ul {
+  padding: none; }
+
 #section-5-container {
   display: grid;
   grid-template-areas: "section-5"; }
   #section-5-container ul {
     grid-area: section-5;
     display: grid;
-    gap: 20px;
-    list-style-type: none; }
+    gap: 20px; }
   #section-5-container li img {
     width: 100%; }
 
@@ -435,11 +442,6 @@ h2 {
     width: 100%; }
   #section-6 #section-6-content {
     grid-area: section-6; }
-  #section-6 p {
-    font-family: "Montserrat";
-    font-weight: lighter;
-    font-size: 16px;
-    text-align: justify; }
 
 /* =============
     footer
