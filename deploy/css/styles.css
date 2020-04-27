@@ -395,37 +395,47 @@ p {
 /* =============
     Section 4
 ============= */
-#section-4-container {
+#section-4 {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-4 ."; }
-  #section-4-container h2 {
+  #section-4 #section-content {
+    grid-area: section-4; }
+  #section-4 h2 {
     font-family: "Montserrat";
     font-weight: bold;
     font-size: 25px;
     border-top: solid;
     border-bottom: solid;
     text-align: center; }
-  #section-4-container ul {
-    grid-area: section-4;
-    display: grid;
-    gap: 20px;
-    list-style-type: none; }
-    #section-4-container ul li img {
-      width: 100%; }
 
 /* =============
     Section 5
 ============= */
-#section-5 {
+#section-5-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-5 ."; }
-  #section-5 img {
-    width: 40%; }
-  #section-5 #section-5-content {
-    grid-area: section-5; }
-  #section-5 p {
+  #section-5-container ul {
+    grid-area: section-4;
+    display: grid;
+    gap: 20px;
+    list-style-type: none; }
+    #section-5-container ul li img {
+      width: 100%; }
+
+/* =============
+    Section 6
+============= */
+#section-6 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-6 ."; }
+  #section-6 img {
+    width: 100%; }
+  #section-6 #section-6-content {
+    grid-area: section-6; }
+  #section-6 p {
     font-family: "Montserrat";
     font-weight: lighter;
     font-size: 16px;

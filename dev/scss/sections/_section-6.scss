@@ -1,0 +1,24 @@
+/* =============
+    Section 6
+============= */
+
+#section-6{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-6 .";
+
+        img{
+            width: 100%;
+        }
+
+    #section-6-content{
+        grid-area: section-6;
+    }
+    p {
+        font-family: "Montserrat"; 
+        font-weight: lighter;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+}
