@@ -7,6 +7,22 @@
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-4 .";
 
+        @include md{
+            display: grid;
+            grid-template-columns: 15% auto 15%;
+            grid-template-areas: ". section-4-container .";
+        }
+
+        @include lg{
+            grid-template-columns: 18% auto 18%;
+        }
+
+        #section-4-content{
+            @include md{
+                grid-area: section-4-container;
+            }
+        }
+    }
     #section-4-content{
-        grid-area: section-4;}
-}
+        grid-area: section-4;
+    }

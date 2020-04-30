@@ -1,6 +1,13 @@
 /* =============
     Section 2
 ============= */
+#section-2{
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-areas: ". section-2";
+        border: 1px solid red;
+    }
+   
 #section-2-container{
     display: grid;
     grid-template-columns: 15px auto 15px;
