@@ -391,19 +391,20 @@ textarea {
 #section-2 {
   display: grid;
   grid-template-columns: 40% auto;
-  grid-template-areas: ". section-2";
+  grid-template-areas: ". section-2 .";
   border: 1px solid red; }
-
-#section-2-container {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-2 ."; }
-  #section-2-container #section-2-content {
-    grid-area: section-2; }
-
-aside
+  @media (min-width: 992px) {
+    #section-2 {
+      grid-template-columns: 20% auto 20%; } }
+  #section-2 #section-2-container {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-2 ."; }
+    #section-2 #section-2-container #section-2-content {
+      grid-area: section-2; }
+  #section-2 aside
 img {
-  width: 100%; }
+    width: 100%; }
 
 /* =============
     Section 3
