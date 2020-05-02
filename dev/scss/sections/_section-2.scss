@@ -2,27 +2,40 @@
     Section 2
 ============= */
 #section-2{
-        display: grid;
-        grid-template-columns: 40% auto;
-        grid-template-areas: ". section-2 .";
-        border: 1px solid red;
-
-
     @include lg{
-        grid-template-columns: 20% auto 20%;
-    }
-  
-    #section-2-container{
         display: grid;
         grid-template-columns: 15px auto 15px;
-        grid-template-areas: ". section-2 .";
-        
-
-        #section-2-content{
-            grid-area: section-2;
-        }
-        }
-        aside 
-            img {
-                width: 100%;}
-}
+        grid-template-areas: ". section-2.";
+    }
+    @include xl{
+        grid-template-areas: auto 1200px auto;
+    }
+        #section-2-container{
+            border: 1px solid red;
+            @include lg{
+                grid-area: section-2;
+            }
+            
+            #section-2-container-content{
+                @include md{
+                    display: grid;
+                    grid-template-columns: 40% auto;
+                    grid-template-areas: "section-2-container";
+                }
+                
+                    #section-2-article{
+                        display: grid;
+                        grid-template-columns: 15px auto 15px;
+                        grid-template-areas: ". section-2-article .";
+                            
+                        #section-2-article-content{
+                            grid-area: section-2-article;
+                        }
+                    }
+                
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+    }   
