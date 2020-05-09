@@ -1,6 +1,31 @@
 /* =============
-    Section 1
+    Section-1
 ============= */
+#section-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
-#section-1 img {
-    width: 100%;}
+
+    background-image: url('../img/section-1/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+    height: 377px;
+
+        @include md{
+            height: 549px;
+            }
+
+        @include lg{
+            height: 724px;
+            }
+
+        
+        h1{
+            color: $charcoal;
+            margin: 34px;
+        }
+
+}

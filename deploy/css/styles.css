@@ -318,40 +318,46 @@ template {
     Base
 ============= */
 ul {
-  padding: 0px; }
+  margin: 0;
+  padding: 0; }
   ul li {
     list-style: none; }
-
-p {
-  font-family: "Montserrat";
-  font-weight: lighter;
-  font-size: 16px;
-  text-align: justify; }
-
-h3 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 25px;
-  border-top: solid;
-  border-bottom: solid;
-  text-align: center; }
-
-h2 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 25px;
-  border-top: solid;
-  border-bottom: solid;
-  text-align: center; }
-
-h1 {
-  font-family: "Montserrat";
-  font-weight: bolder;
-  font-size: 37px; }
 
 /* =============
     Typography
 ============= */
+body {
+  font-family: 'Montserrat', sans-serif; }
+  body h1 {
+    font-weight: 700;
+    font-size: 2.3125rem;
+    text-align: left; }
+    @media (min-width: 768px) {
+      body h1 {
+        font-size: 3.5rem; } }
+    @media (min-width: 992px) {
+      body h1 {
+        font-size: 4.875rem; } }
+  body h2, body h3 {
+    font-weight: 700;
+    font-size: 1.5625rem;
+    text-align: center; }
+    @media (min-width: 768px) {
+      body h2, body h3 {
+        font-size: 2.1875rem;
+        text-align: left; } }
+    @media (min-width: 992px) {
+      body h2, body h3 {
+        font-size: 35px;
+        text-align: left; } }
+  body p {
+    font-weight: 300;
+    font-size: 1.125rem;
+    text-align: justify; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body p {
+    margin: 0;
+    padding: 0; }
+
 /* =============
     Buttons
 ============= */
@@ -379,132 +385,196 @@ textarea {
 /* =============
     Footer
 ============= */
-/* =============
-    Section 1
-============= */
-#section-1 img {
-  width: 100%; }
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #BBD4B5; }
+  footer #footer-content ul {
+    display: flex; }
+    footer #footer-content ul h4 {
+      color: #fff;
+      font-size: 0.8125rem; }
 
 /* =============
-    Section 2
+    Section-1
 ============= */
-@media (min-width: 992px) {
-  #section-2 {
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-2."; } }
-
-@media (min-width: 1200px) {
-  #section-2 {
-    grid-template-areas: auto 1200px auto; } }
-
-#section-2 #section-2-container {
-  border: 1px solid red; }
-  @media (min-width: 992px) {
-    #section-2 #section-2-container {
-      grid-area: section-2; } }
+#section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/section-1/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  gap: 20px;
+  height: 377px; }
   @media (min-width: 768px) {
-    #section-2 #section-2-container #section-2-container-content {
+    #section-1 {
+      height: 549px; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 724px; } }
+  #section-1 h1 {
+    color: #2D2A2E;
+    margin: 34px; }
+
+/* =============
+    Section-2
+============= */
+#section-2 {
+  margin: 35px 0; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      margin: 52px 0;
       display: grid;
-      grid-template-columns: 40% auto;
-      grid-template-areas: "section-2-container"; } }
-  #section-2 #section-2-container #section-2-container-content #section-2-article {
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-2 ."; } }
+  #section-2 #section-2-content {
     display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-2-article ."; }
-    #section-2 #section-2-container #section-2-container-content #section-2-article #section-2-article-content {
-      grid-area: section-2-article; }
-  #section-2 #section-2-container #section-2-container-content img {
-    width: 100%; }
+    grid-template-areas: "section-2-text" "section-2-img"; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-content {
+        margin: 48px 0;
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-areas: "section-2-img section-2-text"; } }
+    @media (min-width: 1200px) {
+      #section-2 #section-2-content {
+        grid-area: section-2; } }
+    #section-2 #section-2-content aside {
+      grid-area: section-2-img;
+      background-image: url("../img/section-2/leftside.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 75vh; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-content aside {
+          height: 50vh; } }
+      @media (min-width: 992px) {
+        #section-2 #section-2-content aside {
+          height: 735px; } }
+      @media (min-width: 1200px) {
+        #section-2 #section-2-content aside {
+          height: 85vh; } }
+    #section-2 #section-2-content #section-2-right {
+      display: grid;
+      grid-template-columns: 15px auto 15px;
+      grid-template-areas: ". section-2-content .";
+      grid-area: section-2-text;
+      margin-bottom: 35px; }
+      #section-2 #section-2-content #section-2-right #section-2-right-content {
+        grid-area: section-2-content;
+        gap: 20px; }
+        #section-2 #section-2-content #section-2-right #section-2-right-content h3 {
+          margin: 16px 0 10px;
+          color: #2D2A2E; }
+        #section-2 #section-2-content #section-2-right #section-2-right-content p {
+          margin-bottom: 16px;
+          color: #000; }
 
 /* =============
-    Section 3
+    Section-3
 ============= */
-#section-3 img {
-  width: 100%; }
-
+#section-3 {
+  background-image: url("../img/section-3/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45vh; }
+  @media (min-width: 768px) {
+    #section-3 {
+      height: 50vh; } }
+  @media (min-width: 992px) {
+    #section-3 {
+      height: 682px; } }
 /* =============
-    Section 4
+    Section-4
 ============= */
-@media (min-width: 992px) {
-  #section-4 {
-    grid-template-columns: auto 1200px auto; } }
-
-#section-4-container {
+#section-4 {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-4 ."; }
+  grid-template-areas: ". section-4 .";
+  margin: 35px 0; }
   @media (min-width: 768px) {
-    #section-4-container {
-      grid-template-columns: 15% auto 15%; } }
+    #section-4 {
+      grid-template-columns: auto 60% auto;
+      margin: 48px 0; } }
   @media (min-width: 992px) {
-    #section-4-container {
-      grid-template-columns: 20% auto 20%; } }
-  #section-4-container #section-4-content {
+    #section-4 {
+      margin: 52px 0;
+      grid-template-columns: auto 50% auto; } }
+  @media (min-width: 1200px) {
+    #section-4 {
+      grid-template-columns: auto 800px auto; } }
+  #section-4 #section-4-content {
     grid-area: section-4; }
+  #section-4 h2 {
+    color: #2D2A2E; }
 
 /* =============
-    Section 5
+    Section-5
 ============= */
-#section-5 {
-  display: grid;
-  grid-template-areas: "section-5"; }
-  #section-5 ul {
-    grid-area: section-5;
+@media (min-width: 1200px) {
+  #section-5 {
     display: grid;
-    gap: 20px;
-    border: 1px solid red; }
-    @media (min-width: 768px) {
-      #section-5 ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "g1 g1" "g3 g2"; } }
-    @media (min-width: 992px) {
-      #section-5 ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "g1 g2" "g1 g3"; } }
-    #section-5 ul li img {
-      width: 100%; }
-    @media (min-width: 768px) {
-      #section-5 ul #g1 {
-        grid-area: g1; } }
-    @media (min-width: 768px) {
-      #section-5 ul #g2 {
-        grid-area: g2; } }
-    @media (min-width: 768px) {
-      #section-5 ul #g3 {
-        grid-area: g3; } }
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-5 ."; } }
+
+#section-5 ul {
+  grid-area: section-5;
+  grid-template-rows: repeat(3, 296px);
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "g1" "g2" "g3"; }
+
+#section-5 #section-5-content {
+  display: grid;
+  gap: 20px; }
+  @media (min-width: 768px) {
+    #section-5 #section-5-content {
+      grid-template-areas: "g1 g1" "g1 g1" "g2 g3";
+      grid-template-rows: repeat(3, 340px); } }
+  @media (min-width: 992px) {
+    #section-5 #section-5-content {
+      grid-template-areas: "g1 g2" "g1 g3";
+      grid-template-rows: repeat(2, 45vh); } }
+  @media (min-width: 1200px) {
+    #section-5 #section-5-content {
+      grid-area: section-5; } }
+  #section-5 #section-5-content li {
+    background-size: cover;
+    background-position: center; }
+  #section-5 #section-5-content #g1 {
+    grid-area: g1;
+    background-image: url("../img/section-5/gallery-1.jpg"); }
+
+#section-5 #g2 {
+  background-image: url("../img/section-5/gallery-2.jpg"); }
+  @media (min-width: 992px) {
+    #section-5 #g2 {
+      grid-area: g2; } }
+#section-5 #g3 {
+  background-image: url("../img/section-5/gallery-3.jpg");
+  grid-area: g3; }
+
 /* =============
-    Section 6
+    Section-6
 ============= */
 #section-6 {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-6 ."; }
-  @media (min-width: 768px) {
+  grid-template-areas: ". section-6 .";
+  margin: 35px 0; }
+  #section-6 p {
+    margin: 35px 0;
+    color: #000; }
+  @media (min-width: 1200px) {
     #section-6 {
-      display: grid;
-      grid-template-columns: 15% auto 15%;
-      grid-template-areas: ". section-6 ."; } }
-  @media (min-width: 992px) {
-    #section-6 {
-      grid-template-columns: 18% auto 18%; } }
-img {
-  width: 100%; }
-
-#section-6-content {
-  grid-area: section-6; }
-
-/* =============
-    footer
-============= */
-footer {
-  display: grid;
-  grid-template-columns: 40% auto 40%;
-  grid-template-areas: ". footer ."; }
-  footer #footer-content {
-    grid-area: footer; }
-  footer img {
-    width: 100%; }
-
-footer {
-  background-color: #BBD4B5; }
+      grid-template-columns: auto 1200px auto;
+      margin: 52px 0; } }
+  #section-6 #section-6-content {
+    grid-area: section-6; }
+    @media (min-width: 992px) {
+      #section-6 #section-6-content {
+        display: grid;
+        grid-template-columns: 30% auto;
+        margin: 48px 0; } }
