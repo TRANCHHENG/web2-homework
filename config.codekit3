@@ -218,14 +218,6 @@
 		"oAP": "/dev/footer.html",
 		"oF": 0
 		},
-	"/dev/header.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/header.html",
-		"oF": 0
-		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -962,7 +954,7 @@
 	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 8193,
+	"esLintEnvironmentsMask": 1,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -1289,7 +1281,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
