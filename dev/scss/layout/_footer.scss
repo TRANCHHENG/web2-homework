@@ -2,21 +2,30 @@
     Footer
 ============= */
 footer{
-    padding: 50px 0;
-    
-      #footer-content {
 
+    background-color: $green;
 
-        ul{
-            display: flex;
-            justify-content: center;
-            li{
-                margin: 0 10px;
+    #footer-content{
+        display: flex;
+        justify-content: flex-end;
+  
+        aside{
+            padding-right: 30%;
 
-        }
+            @include md{
+                padding-right: 38%;
+            }
 
-               
-        }
+            @include lg {
+                padding-right: 42%;
+            }
+    }
       
+   
+        h4{
+            color: $white;
+            padding-top: 30px;
+        }
     }
 }
+

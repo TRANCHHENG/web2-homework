@@ -11,7 +11,7 @@ header {
     >div {
         display: grid;
         grid-template-areas: "logo burger"
-            "nav nav";
+                              "nav nav";
         grid-template-columns: 80% auto;
 
         @include lg {

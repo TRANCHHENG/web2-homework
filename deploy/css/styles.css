@@ -333,6 +333,9 @@ ul {
   @media (min-width: 992px) {
     .show-for-lg {
       display: block; } }
+.content-spacing {
+  padding: 10px; }
+
 /* =============
     Typography
 ============= */
@@ -471,12 +474,21 @@ header {
     Footer
 ============= */
 footer {
-  padding: 50px 0; }
-  footer #footer-content ul {
+  background-color: #BBD4B5; }
+  footer #footer-content {
     display: flex;
-    justify-content: center; }
-    footer #footer-content ul li {
-      margin: 0 10px; }
+    justify-content: flex-end; }
+    footer #footer-content aside {
+      padding-right: 30%; }
+      @media (min-width: 768px) {
+        footer #footer-content aside {
+          padding-right: 38%; } }
+      @media (min-width: 992px) {
+        footer #footer-content aside {
+          padding-right: 42%; } }
+    footer #footer-content h4 {
+      color: #fff;
+      padding-top: 30px; }
 
 /* =============
     Section-1
