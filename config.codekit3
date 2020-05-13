@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "05C596DB-74C6-4767-9B01-775EE9559484"
+		"uuidString": "560D4B45-A1BD-42C5-82B5-D287ED2355A2"
 		}
 	],
 "creatorBuild": "32001",
@@ -130,13 +130,13 @@
 		},
 	"/deploy/img/section-3/hero.jpg": {
 		"ft": 16384,
-		"iS": 135605,
+		"iS": 156686,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/deploy/img/section-3/hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/deploy/img/section-5/gallery-1.jpg": {
@@ -240,8 +240,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/deploy/js/scripts-min.js",
-		"oF": 2,
+		"oAP": "/dev/js/scripts-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -453,7 +453,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/styles.scss": {
+	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -472,7 +472,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-1.html",
-		"oF": 1
+		"oF": 0
 		},
 	"/dev/section-2.kit": {
 		"cB": 0,
@@ -480,7 +480,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-2.html",
-		"oF": 1
+		"oF": 0
 		},
 	"/dev/section-3.kit": {
 		"cB": 0,
@@ -488,7 +488,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-3.html",
-		"oF": 1
+		"oF": 0
 		},
 	"/dev/section-4.kit": {
 		"cB": 0,
@@ -520,10 +520,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 607294646.87183404,
-	"displayValue": "TRAN_WEB2",
-	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets-verd",
+	"creationDate": 611089892.320521,
+	"displayValue": "WEB2_HW",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "brackets-brick",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
@@ -1014,7 +1014,7 @@
 			},
 		"camelcase": {
 			"active": 0,
-			"optionString": "{'properties': 'always', 'ignoreDestructuring': false}"
+			"optionString": "{'properties': 'always', 'ignoreDestructuring': false, 'ignoreImports': false}"
 			},
 		"capitalized-comments": {
 			"active": 0,
@@ -1394,7 +1394,7 @@
 			},
 		"no-extra-parens": {
 			"active": 0,
-			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false, 'enforceForSequenceExpressions': false, 'enforceForNewInMemberExpressions': false}"
 			},
 		"no-extra-semi": {
 			"active": 1,
@@ -1446,7 +1446,7 @@
 			},
 		"no-invalid-this": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'capIsConstructor': true}"
 			},
 		"no-irregular-whitespace": {
 			"active": 1,
@@ -1694,7 +1694,7 @@
 			},
 		"no-underscore-dangle": {
 			"active": 0,
-			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false}"
 			},
 		"no-unexpected-multiline": {
 			"active": 1,
@@ -1718,7 +1718,7 @@
 			},
 		"no-unsafe-negation": {
 			"active": 1,
-			"optionString": ""
+			"optionString": "{'enforceForOrderingRelations': false}"
 			},
 		"no-unused-expressions": {
 			"active": 0,
@@ -1746,7 +1746,7 @@
 			},
 		"no-useless-computed-key": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{'enforceForClassMembers': false}"
 			},
 		"no-useless-concat": {
 			"active": 0,
@@ -1990,7 +1990,7 @@
 			},
 		"use-isnan": {
 			"active": 1,
-			"optionString": ""
+			"optionString": "{'enforceForSwitchCase': false, 'enforceForIndexOf': false}"
 			},
 		"valid-jsdoc": {
 			"active": 0,
