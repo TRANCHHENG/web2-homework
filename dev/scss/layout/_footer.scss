@@ -2,27 +2,21 @@
     Footer
 ============= */
 footer{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-
-    background-color: $green;
+    padding: 50px 0;
     
-      
-    #footer-content {
+      #footer-content {
 
 
         ul{
             display: flex;
             justify-content: center;
+            li{
+                margin: 0 10px;
 
         }
 
                
         }
       
-        
+    }
 }
-       
-    
-    
