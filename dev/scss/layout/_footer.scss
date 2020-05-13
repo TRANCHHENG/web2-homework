@@ -14,12 +14,7 @@ footer{
 
         ul{
             display: flex;
-
-            h4{
-                color: $white;
-                font-size: rem-calc(13);
-            
-            }
+            justify-content: center;
 
         }
 
