@@ -3,10 +3,7 @@
 ============= */
 #section-1{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
+    text-align: left;
 
     background-image: url('../img/section-1/hero.jpg');
     background-size: cover;
@@ -24,6 +21,8 @@
 
         
         h1{
+            padding: 18% 0;
+            
             color: $charcoal;
             margin: 34px;
         }

@@ -22,6 +22,29 @@ header {
         #logo-container {
             grid-area: logo;
             padding: 20px;
+            
+         
+
+            @include lg{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            
+            a:link, a:visited{
+                background-color: $green;
+                color: $black;
+                transition: 0.25s;
+                text-decoration: none;
+                padding: 10px 25px;
+                border-radius: 23px;
+                font-weight: 700;
+            }
+
+            a:hover, a:active{
+                background-color: $charcoal;
+                color: $white;
+            }
         }
 
         #burger-container {
@@ -41,10 +64,10 @@ header {
         }
 
         #nav-container {
-            background-color: $black;
+            background-color: $white;
             display: none;
             grid-area: nav;
-            padding: 20px;
+            padding: 0 20px 0;
 
             @include lg {
                 background-color: $white;

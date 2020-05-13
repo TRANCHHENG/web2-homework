@@ -340,8 +340,7 @@ body {
   font-family: 'Montserrat', sans-serif; }
   body h1 {
     font-weight: 700;
-    font-size: 2.3125rem;
-    text-align: left; }
+    font-size: 2.3125rem; }
     @media (min-width: 768px) {
       body h1 {
         font-size: 3.5rem; } }
@@ -410,7 +409,7 @@ textarea {
       transition: 0.25s; }
     #nav-container ul li a:hover,
     #nav-container ul li a:active {
-      color: #000; }
+      color: #BBD4B5; }
 
 /* =============
     Header
@@ -432,6 +431,22 @@ header {
     header > div #logo-container {
       grid-area: logo;
       padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #logo-container {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end; } }
+      header > div #logo-container a:link, header > div #logo-container a:visited {
+        background-color: #BBD4B5;
+        color: #000;
+        transition: 0.25s;
+        text-decoration: none;
+        padding: 10px 25px;
+        border-radius: 23px;
+        font-weight: 700; }
+      header > div #logo-container a:hover, header > div #logo-container a:active {
+        background-color: #2D2A2E;
+        color: #fff; }
     header > div #burger-container {
       align-items: center;
       display: flex;
@@ -444,10 +459,10 @@ header {
       header > div #burger-container i {
         cursor: pointer; }
     header > div #nav-container {
-      background-color: #000;
+      background-color: #fff;
       display: none;
       grid-area: nav;
-      padding: 20px; }
+      padding: 0 20px 0; }
       @media (min-width: 992px) {
         header > div #nav-container {
           background-color: #fff;
@@ -468,8 +483,7 @@ footer {
 ============= */
 #section-1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
   background-image: url("../img/section-1/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -482,6 +496,7 @@ footer {
     #section-1 {
       height: 724px; } }
   #section-1 h1 {
+    padding: 18% 0;
     color: #2D2A2E;
     margin: 34px; }
 
