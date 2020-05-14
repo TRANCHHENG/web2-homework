@@ -11,6 +11,9 @@
     p {
         margin: 35px 0;
         color: $black;
+        font-weight: 300;
+        font-size: rem-calc(18);
+        text-align: justify;
     }
 
     @include xl {

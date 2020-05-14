@@ -68,6 +68,19 @@
                 h3 {
                     margin: 16px 0 10px;
                     color: $charcoal;
+                    font-weight: 700;
+                    font-size: rem-calc(25);
+                    text-align: center;
+
+                    @include md {
+                        font-size: rem-calc(35);
+                        text-align: left;
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(50);
+                        text-align: left;
+                    }
                 }
 
                 p {

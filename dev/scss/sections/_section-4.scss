@@ -27,6 +27,17 @@
 
     h2 {
         color: $charcoal;
+        text-align: center;
+        font-weight: 700px;
+        font-size: rem-calc(25);
+
+        @include md {
+            font-size: rem-calc(35);
+        }
+
+        @include lg {
+            font-size: rem-calc(52);
+        }
     }
 
 }

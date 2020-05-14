@@ -350,32 +350,6 @@ body {
     @media (min-width: 992px) {
       body h1 {
         font-size: 4.875rem; } }
-  body h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.5625rem; }
-    @media (min-width: 768px) {
-      body h2 {
-        font-size: 2.1875rem; } }
-    @media (min-width: 992px) {
-      body h2 {
-        font-size: 3.25rem; } }
-  body h3 {
-    font-weight: 700;
-    font-size: 1.5625rem;
-    text-align: center; }
-    @media (min-width: 768px) {
-      body h3 {
-        font-size: 2.1875rem;
-        text-align: left; } }
-    @media (min-width: 992px) {
-      body h3 {
-        font-size: 3.125rem;
-        text-align: left; } }
-  body p {
-    font-weight: 300;
-    font-size: 1.125rem;
-    text-align: justify; }
   body h1,
   body h2,
   body h3,
@@ -577,7 +551,18 @@ footer {
         gap: 20px; }
         #section-2 #section-2-content #section-2-right #section-2-right-content h3 {
           margin: 16px 0 10px;
-          color: #2D2A2E; }
+          color: #2D2A2E;
+          font-weight: 700;
+          font-size: 1.5625rem;
+          text-align: center; }
+          @media (min-width: 768px) {
+            #section-2 #section-2-content #section-2-right #section-2-right-content h3 {
+              font-size: 2.1875rem;
+              text-align: left; } }
+          @media (min-width: 992px) {
+            #section-2 #section-2-content #section-2-right #section-2-right-content h3 {
+              font-size: 3.125rem;
+              text-align: left; } }
         #section-2 #section-2-content #section-2-right #section-2-right-content p {
           margin-bottom: 16px;
           color: #000; }
@@ -618,8 +603,16 @@ footer {
   #section-4 #section-4-content {
     grid-area: section-4; }
   #section-4 h2 {
-    color: #2D2A2E; }
-
+    color: #2D2A2E;
+    text-align: center;
+    font-weight: 700px;
+    font-size: 1.5625rem; }
+    @media (min-width: 768px) {
+      #section-4 h2 {
+        font-size: 2.1875rem; } }
+    @media (min-width: 992px) {
+      #section-4 h2 {
+        font-size: 3.25rem; } }
 /* =============
     Section-5
 ============= */
@@ -676,7 +669,10 @@ footer {
   margin: 35px 0; }
   #section-6 p {
     margin: 35px 0;
-    color: #000; }
+    color: #000;
+    font-weight: 300;
+    font-size: 1.125rem;
+    text-align: justify; }
   @media (min-width: 1200px) {
     #section-6 {
       grid-template-columns: auto 1200px auto;
