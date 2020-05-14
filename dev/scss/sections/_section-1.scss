@@ -1,7 +1,7 @@
 /* =============
     Section-1
 ============= */
-#section-1{
+#section-1 {
     display: flex;
     text-align: left;
 
@@ -11,20 +11,20 @@
     gap: 20px;
     height: 377px;
 
-        @include md{
-            height: 549px;
-            }
+    @include md {
+        height: 549px;
+    }
 
-        @include lg{
-            height: 724px;
-            }
+    @include lg {
+        height: 724px;
+    }
 
-        
-        h1{
-            padding: 18% 0;
-            
-            color: $charcoal;
-            margin: 34px;
-        }
+
+    h1 {
+        padding: 18% 0;
+
+        color: $charcoal;
+        margin: 34px;
+    }
 
 }

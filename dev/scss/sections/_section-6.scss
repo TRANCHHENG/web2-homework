@@ -1,53 +1,53 @@
 /* =============
     Section-6
 ============= */
-#section-6{
+#section-6 {
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-6 .";
     margin: 35px 0;
 
-        
-        p{
-            margin: 35px 0;
-            color: $black;
-        }
 
-            @include xl{
-                grid-template-columns: auto 1200px auto;
-                margin: 52px 0;
-            }
+    p {
+        margin: 35px 0;
+        color: $black;
+    }
 
-        #section-6-content{
-            grid-area: section-6;
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+        margin: 52px 0;
+    }
 
-            #section-6-hero{
+    #section-6-content {
+        grid-area: section-6;
 
-                >div{
+        #section-6-hero {
 
-                    background-image: url("../img/section-6/circle.jpg");
-                    height: 303px;
-                    width: 303px;
-                    border-radius: 100%;
-                    margin: 0 auto;
-                   
-                    @include md{
-                        height: 318px;
-                        width: 318px;
-                    }
+            >div {
 
-                    @include lg{
-                        height: 318px;
-                        width: 318px;
-                    }
-                }
-            }
-    
-            @include lg{
-                display: grid;
-                grid-template-columns: 30% auto;
-                margin: 48px 0;
+                background-image: url("../img/section-6/circle.jpg");
+                height: 303px;
+                width: 303px;
+                border-radius: 100%;
+                margin: 0 auto;
+
+                @include md {
+                    height: 318px;
+                    width: 318px;
                 }
 
+                @include lg {
+                    height: 318px;
+                    width: 318px;
+                }
+            }
         }
+
+        @include lg {
+            display: grid;
+            grid-template-columns: 30% auto;
+            margin: 48px 0;
+        }
+
+    }
 }

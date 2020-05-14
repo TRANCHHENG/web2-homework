@@ -2,27 +2,31 @@
     Base
 ============= */
 
-ul{
+ul {
     margin: 0;
     padding: 0;
-    li{
+
+    li {
         list-style: none;
     }
 }
-.show-for-md{
+
+.show-for-md {
     display: none;
-    @include md{
+
+    @include md {
         display: block;
     }
 }
 
-.show-for-lg{
+.show-for-lg {
     display: none;
-    @include lg{
+
+    @include lg {
         display: block;
     }
 }
 
-.content-spacing{
+.content-spacing {
     padding: 10px;
 }

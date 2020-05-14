@@ -1,19 +1,19 @@
 /* =============
     Section-3
 ============= */
-#section-3{
+#section-3 {
     background-image: url('../img/section-3/hero.jpg');
     background-size: cover;
     background-position: center;
     height: 45vh;
-    
 
-    @include md{
+
+    @include md {
         height: 50vh;
     }
 
-    @include lg{ 
+    @include lg {
         height: 682px;
     }
-   
+
 }

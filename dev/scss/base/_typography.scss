@@ -2,59 +2,67 @@
     Typography
 ============= */
 
-body{
-    
-    font-family: 'Montserrat', sans-serif;
-    
+body {
 
-    h1{
+    font-family: 'Montserrat', sans-serif;
+
+
+    h1 {
         font-weight: 700;
         font-size: rem-calc(37);
-        @include md{
+
+        @include md {
             font-size: rem-calc(56);
         }
 
-        @include lg{
+        @include lg {
             font-size: rem-calc(78);
         }
     }
-    h2,{
+
+    h2,
+        {
         text-align: center;
         font-weight: 700;
         font-size: rem-calc(25);
 
-        @include md{
+        @include md {
             font-size: rem-calc(35);
         }
 
-        @include lg{
+        @include lg {
             font-size: rem-calc(52);
         }
     }
-    
-     h3,{
+
+    h3,
+        {
         font-weight: 700;
         font-size: rem-calc(25);
         text-align: center;
-        
-        @include md{
+
+        @include md {
             font-size: rem-calc(35);
             text-align: left;
         }
-        @include lg{
+
+        @include lg {
             font-size: rem-calc(50);
             text-align: left;
         }
 
     }
-    
-    p{
+
+    p {
         font-weight: 300;
         font-size: rem-calc(18);
         text-align: justify;
     }
 
-    h1,h2,h3,h4,h5,h6,p{
+    h1,
+    h2,
+    h3,
+    p {
         margin: 0;
         padding: 0;
     }

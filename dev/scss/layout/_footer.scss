@@ -1,31 +1,30 @@
 /* =============
     Footer
 ============= */
-footer{
+footer {
 
     background-color: $green;
 
-    #footer-content{
+    #footer-content {
         display: flex;
         justify-content: flex-end;
-  
-        aside{
+
+        aside {
             padding-right: 30%;
 
-            @include md{
+            @include md {
                 padding-right: 38%;
             }
 
             @include lg {
                 padding-right: 42%;
             }
-    }
-      
-   
-        h4{
+        }
+
+
+        h4 {
             color: $white;
             padding-top: 30px;
         }
     }
 }
-
