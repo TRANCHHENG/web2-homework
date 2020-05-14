@@ -7,6 +7,7 @@
     grid-template-areas: ". section-6 .";
     margin: 35px 0;
 
+        
         p{
             margin: 35px 0;
             color: $black;
@@ -19,6 +20,28 @@
 
         #section-6-content{
             grid-area: section-6;
+
+            #section-6-hero{
+
+                >div{
+
+                    background-image: url("../img/section-6/circle.jpg");
+                    height: 303px;
+                    width: 303px;
+                    border-radius: 100%;
+                    margin: 0 auto;
+                   
+                    @include md{
+                        height: 318px;
+                        width: 318px;
+                    }
+
+                    @include lg{
+                        height: 318px;
+                        width: 318px;
+                    }
+                }
+            }
     
             @include lg{
                 display: grid;

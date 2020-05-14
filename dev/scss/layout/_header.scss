@@ -23,13 +23,11 @@ header {
             grid-area: logo;
             padding: 20px;
             
-         
-
-            @include lg{
+          @include lg{
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-            }
+        }
             
             a:link, a:visited{
                 background-color: $green;
